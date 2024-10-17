@@ -1,0 +1,224 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+
+
+html,
+body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background-color: black;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+#register-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: #eaeaea40 0px 13px 27px -5px,
+        #eaeaea40 0px 8px 16px -8px;
+}
+
+
+#register-banner {
+    background: url(../img/Design\ sem\ nome\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+
+#banner-layer {
+    background-color: #00000073;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    word-spacing: 50rem;
+
+}
+
+
+#register-form {
+    background-color: #000000;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem
+}
+
+#register-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#register-control label {
+    font-weight: bold;
+    margin-bottom: .6rem;
+
+}
+
+#register-control input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: .6rem;
+    border-radius: 9px;
+
+}
+
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#generate-password:hover {
+    color: #168225;
+}
+
+#register-form #generated-password {
+    border: 1px solid #168225;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: .4rem;
+    color: #24da0c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#register-form #generated-password p {
+    color: green;
+    margin-bottom: 0.5rem;
+
+
+}
+
+
+#register-form input[type="submit"],
+#copy-password{
+    background-color: #08d316;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: .8;
+    border: none;
+    border-radius: 9px;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .4s;
+
+}
+
+#generate-options button{
+    padding: 12px;
+    margin-top: 15px;
+    margin-left: 35%;
+}
+
+#register-form input[type="submit"]:hover{
+    opacity: 1;
+}
+
+
+/*Atualizacao do css*/
+
+
+#generate-options{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+
+}
+
+
+#generate-options .form-control{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#generate-options label {
+    font-size: .8rem;
+
+}
+
+#generate-options input [type="text"]{
+    max-width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#generate-options input{
+    color: #000000;
+}
+
+
+#copy-password{
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+    
+}
+
+#copy-password:hover{
+    background-color: #24da0c;
+}
+
+
+#generate-options button{
+    margin: 1rem auto;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    
+}
+
+
+#generate-options button:hover{
+    background-color: #24da0c;
+    color: #fff;
+
+}
+
+
+.hide{
+    display: none;
+}
