@@ -83,7 +83,6 @@ input:focus {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    color: #000000;
 }
 
 
@@ -98,6 +97,7 @@ input:focus {
     border-bottom: 1px solid #000000;
     padding: .6rem;
     border-radius: 9px;
+    color: #000000;
 
 }
 
@@ -222,4 +222,120 @@ input:focus {
 
 .hide{
     display: none;
+}
+
+/* Estilos para telas grandes (desktop) */
+@media (min-width: 900px) {
+    #register-container {
+        flex-direction: row;
+    }
+
+    #register-banner,
+    #register-form {
+        width: 50%;
+    }
+    #register-banner {
+        background-size: cover;
+        background-position: center;
+      
+    }
+}
+
+/* Estilos para tablets (médias telas) */
+@media (max-width: 900px) {
+    #register-container {
+        flex-direction: column;
+        max-width: 100%;
+        min-height: auto;
+    }
+    #register-banner {
+        background-size: cover;
+        background-position: center;
+      
+    }
+
+    #register-banner,
+    #register-form {
+        width: 100%;
+    }
+
+    #register-banner h1 {
+        font-size: 3rem;
+    }
+
+    #register-form h2 {
+        font-size: 1.8rem;
+    }
+
+    #register-form p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Estilos para celulares (pequenas telas) */
+@media (max-width: 600px) {
+    #register-container {
+        margin: 1rem;
+        box-shadow: none;
+    }
+    #register-banner {
+        background-size: cover;
+        background-position: center;
+      
+    }
+
+    #register-banner h1 {
+        font-size: 2rem;
+        word-spacing: normal;
+    }
+
+    #register-form h2 {
+        font-size: 1.6rem;
+    }
+
+    #register-form p {
+        font-size: 0.6rem;
+    }
+
+    #register-form input[type="submit"],
+    #copy-password {
+        padding: 0.8rem 2rem;
+    }
+
+    #generate-options button {
+        margin-left: 20%;
+    }
+}
+
+/* Estilos para telas muito pequenas (menor que 400px) */
+@media (max-width: 400px) {
+    #register-container {
+        padding: 0.5rem;
+    }
+    #register-banner {
+        background-size: cover;
+        background-position: center;
+        
+      
+    }
+    #register-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    #register-form h2 {
+        font-size: 1.4rem;
+    }
+
+    #register-form p {
+        font-size: 0.5rem;
+    }
+
+    #register-form input[type="submit"],
+    #copy-password {
+        padding: 0.6rem 1.5rem;
+    }
+
+    #generate-options button {
+        margin-left: 10%;
+    }
 }
